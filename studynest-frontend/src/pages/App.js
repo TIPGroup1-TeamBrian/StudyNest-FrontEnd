@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import '../style/App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from "./Home"
