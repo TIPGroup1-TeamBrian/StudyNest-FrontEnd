@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# StudyNest
+Team project repository for 2023 s2 Technology Inquiry Project 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# For the team:
 
-In the project directory, you can run:
+## Developement instruction:
 
-### `npm start`
+### `create new branch from the jira ticket`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Always create a new branch from your assigned Jira task, DO NOT TOUCH THE CODE IN MAIN BRANCH :**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div style="text-align:center">
+<img src="./studynest-frontend/public/Screenshot 2023-09-11 at 10.18.32 am.png" width="400"><br><br>
+</div>
+you will be directed to another page to choose the code repo and the branch to branch from.
 
-### `npm test`
+<div style="text-align:center">
+<img src="./studynest-frontend/public/Screenshot 2023-09-11 at 10.21.26 am.png" width="400" >
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`Remember to always branch from "main" and leave the branch name as default, do not change the branch name` 
 
-### `npm run build`
+### `Configure local dev environment`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After pulling the new code every time, please remember to navigate to the correct directory where the "package.json" is located (through VS code terminal) and redo the install command everytime:
+```
+npm install 
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start the react server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run start 
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `Useful Documentation/Reference`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React JS: [React Offical Document](https://react.dev/learn/describing-the-ui)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tailwind CSS: [Tailwind css official Document](https://tailwindcss.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### `Merging your branch to main branch when you finish the implementation`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This would be the trickiest part for using version control in our repo:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. After you pushed your local code to Github, you'll need to perform a "merge operation" to the main branch 
+2. Currently direct merge into the main branch is disble, you'll need to create a "pull request", for more information please see [Official documentation for pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
