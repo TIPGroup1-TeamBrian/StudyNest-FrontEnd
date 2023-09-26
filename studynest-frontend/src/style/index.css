@@ -17,3 +17,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input {
+  outline: none;
+  background-color: white;
+  color:  #8B8B8B;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 5px;
+  resize: none;
+  outline: none;
+  border: 2px solid white;
+  transition: 0.5s ease;
+  flex-shrink: 0;
+}
+
+:root {
+  --dark-blue: #587bb4;
+  --light-blue: #F2F7FF;
+  --light-grey-background: #f0f0f0;
+
+  --dark-grey-text: #525252;
+  --light-grey-text: #8B8B8B;
+
+  --button-hover: #2B5291;
+  --box-shadow: rgba(0, 0, 0, 0.16);
+  
+  --alert-red: #CB0814;
+
+  --box-shadow: rgba(136, 136, 136, 0.5);
+
+  --white:white;
+}
