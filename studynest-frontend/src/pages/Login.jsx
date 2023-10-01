@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../images/school.png";
-// import "../style/buttons.css";
+//import { Input } from "@material-tailwind/react";
+
+
 
 const Login = () => {
   return (
@@ -48,7 +50,23 @@ const Login = () => {
           </div> */}
 
           <div class="flex flex-col justify-center items-center rounded-tl-[3em] rounded-br-[3em] bg-[#F2F7FF] px-[8%] pt-[5%] gap-[2rem] h-[80%] w-[80%] overflow-hidden">
-            <h2 class='text-[#587bb4] text-center text-2xl'>Student Login</h2>
+            <div class="flex flex-row items-center gap-8 mb-10">
+              <a href="">
+                <button class="bg-[#587bb4] hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
+                  Teacher Login
+                </button>
+
+              </a>
+
+              <a href="">
+                <button class="bg-[#587bb4] hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
+                    Admin Login
+                  </button> 
+              </a>
+              
+            </div>
+            
+            <h2 class='text-[#587bb4] text-center text-2xl font-semibold'>Student Login</h2>
             <form class="my-[1rem]">
               <div class="">
                 <input class="px-[1rem] pt-[1.8rem] pb-[0.8rem] min-w-[25rem] hover:shadow-lg focus:border-solid focus:border-[2px] focus:border-[#587bb4]" id="usernmae" name="username" placeholder="Username" type="text" required />
@@ -63,6 +81,10 @@ const Login = () => {
                 </label>
 
               </div>
+              {/* <div className="flex w-72 flex-col items-end gap-6">
+                <Input size="md" label="Input Medium" />
+                <Input size="lg" label="Input Large" />
+              </div> */}
 
               <button href="" class="bg-[#587bb4] text-white w-[50%] h-auto py-[15px] px-[20px] cursor-pointer text-center rounded-[3em] block m-auto">Login</button>
             </form>

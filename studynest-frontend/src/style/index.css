@@ -49,3 +49,28 @@ input {
 
   --white:white;
 }
+
+
+a {
+  transition: 0.5s;
+  /*ANIMATION*/
+  text-decoration: none;
+  color: inherit;
+}
+
+a.white-text {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+ 
+input[type=date] {
+  color: var(--dark-blue);
+  font-family: effra;
+  border: 3px solid var(--dark-blue);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
