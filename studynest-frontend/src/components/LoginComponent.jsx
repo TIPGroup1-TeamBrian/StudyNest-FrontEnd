@@ -6,7 +6,21 @@ const LoginComponent = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    
+    const handleUsernameChange = (e) => {
+        e.preventDefault();
+        setUsername(e.target.value);
+    }
+
+    const handlePasswordChange = (e) => {
+        e.preventDefault();
+        setPassword(e.target.value);
+    }
+
+    const handleSubmit = (e) => {   
+        e.preventDefault();
+        console.log(username);
+        console.log(password);
+    }
 
     return (
         <div className="font-Effra font-normal text-[#525252]">
