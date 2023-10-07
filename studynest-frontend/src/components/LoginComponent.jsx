@@ -1,12 +1,15 @@
-import React from "react";
+import React from 'react';
 import Logo from "../images/school.png";
-//import { Input } from "@material-tailwind/react";
+import { useState } from "react";
 
+const LoginComponent = (props) => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
+    
 
-const Login = () => {
-  return (
-    <div className="font-Effra font-normal text-[#525252]">
+    return (
+        <div className="font-Effra font-normal text-[#525252]">
       <div id="topbar" className=" px-12 py-4">
         <h1 className="text-3xl font-Effra">StudyNest</h1>
       </div>
@@ -51,23 +54,23 @@ const Login = () => {
 
           <div class="flex flex-col justify-center items-center rounded-tl-[3em] rounded-br-[3em] bg-[#F2F7FF] px-[8%] pt-[5%] gap-[2rem] h-[80%] w-[80%] overflow-hidden">
             <div class="flex flex-row items-center gap-8 mb-10">
-              <a href="">
+              <a href={`/Login${props.role1}`}>
                 <button class="bg-[#587bb4] hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
-                  Teacher Login
+                  {props.role1} Login
                 </button>
 
               </a>
 
-              <a href="">
+              <a href={`/Login${props.role2}`}>
                 <button class="bg-[#587bb4] hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
-                    Admin Login
+                    {props.role2} Login
                   </button> 
               </a>
               
             </div>
             
-            <h2 class='text-[#587bb4] text-center text-2xl font-semibold'>Student Login</h2>
-            <form class="my-[1rem]">
+            <h2 class='text-[#587bb4] text-center text-2xl font-semibold'>{props.currentRole} Login</h2>
+            <form class="my-[1rem]" method="post" action=''>
               <div class="">
                 <input class="px-[1rem] pt-[1.8rem] pb-[0.8rem] min-w-[25rem] hover:shadow-lg focus:border-solid focus:border-[2px] focus:border-[#587bb4]" id="usernmae" name="username" placeholder="Username" type="text" required />
                 <label for="username" data-content="Email" class="flex relative max-h-0 color-[#587bb4] before:inline-block  before:filter-[blur(0)] before:origin-top-left before:left-[1.4rem] before:relative">
@@ -91,11 +94,11 @@ const Login = () => {
           </div>
 
 
-
+ 
         </div>
       </div>
     </div>
-  );
+    );
 };
 
-export default Login;
+export default LoginComponent;
