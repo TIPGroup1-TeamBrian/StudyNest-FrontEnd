@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../images/school.png";
 import { useState } from "react";
+import Loginlogo from "../images/Loginlogo.svg";
 
 const LoginComponent = (props) => {
     const [username, setUsername] = useState("");
@@ -31,21 +32,10 @@ const LoginComponent = (props) => {
       <div id="main" className="h-[90vh] flex flex-row">
         <div
           id="left"
-          className="px-[10%] flex flex-col justify-center items-center bg-[#F7F7F7] w-[50%] bg-cover overflow-hidden"
+          className=" flex flex-col justify-center items-center bg-[#F7F7F7] w-[50%] bg-cover overflow-hidden"
         >
-          <div class="flex flex-row">
-            <img className="block w-[30%] items-center h-auto" src={Logo} alt="sth" />
-
-            <div className="text-left">
-              <h1 className="text-7xl text-[#8B8B8B]">Study</h1>
-              <h1 className="text-7xl text-[#073763]">Nest</h1>
-              <h3 className="text-[#587BB4] text-2xl ">
-                Empowering Minds, Igniting Futures
-              </h3>
-
-
-            </div>
-          </div>
+          
+          <img className="block  items-center h-auto" src={Loginlogo} alt="sth" />
         </div>
 
         <div
