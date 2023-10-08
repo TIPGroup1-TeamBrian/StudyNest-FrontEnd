@@ -12,6 +12,16 @@ const SubjectForm = () => {
                         <div class="flex flex-row justify-around">
                             <label for="id" hidden="hidden">Computer Science</label>
                             <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
                          
                         </div>
                        
@@ -26,6 +36,16 @@ const SubjectForm = () => {
                     <form class="bg-white rounded-3xl w-full h-1/2 p-[4rem] ">
                     <h1>Available Subjects</h1>
                         <div class="flex flex-row justify-around">
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
+                            <label for="id" hidden="hidden">Computer Science</label>
+                            <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
                             <label for="id" hidden="hidden">Computer Science</label>
                             <button type="button" name="cs" id="cs" class="bg-white hover:bg-[#176AE6] hover:text-white text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ">Computer Science</button>
                          
