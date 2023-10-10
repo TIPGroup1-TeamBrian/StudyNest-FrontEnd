@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import Arrow from "../images/arrowBack.svg"
 
 export const RegisterStudent = () => {
     const [isChecked1, setIsChecked1] = useState(false);
@@ -60,18 +61,21 @@ export const RegisterStudent = () => {
 
     return (
         <div class="bg-[#f7f7f7]">
-            <nav>
-                <a href="studynest-frontend/src/pages/Home.jsx" class="text-[#587BB4]" >&lt; Back to Homepage</a>
+            <nav class='px-12 py-4'>
+                <a href="/LoginStudent" class="text-[#587BB4]" >
+                    <img src={Arrow} alt="Back Arrow" class="inline-block w-6 h-6 mr-2" />
+                    Back to Homepage
+                </a>
             </nav>
             <div class="mx-10 px-32 mb-3">
-                <h1 class="text-5xl font-effra text-[#525252] mx-1">Enroll and Start Learning Now!</h1>
+                <h1 class="text-5xl font-effra text-[#525252] w-4/5 px-6 py-6">Enroll and Start Learning Now!</h1>
             </div>
             <div class="bg-[#f7f7f7] h-screen flex flex-col items-center">
-                <div className= "w-4/5 h-3/4 bg-[#ffffff] mt-3 rounded-3xl">
-                    <div class="px-6 py-3">
+                <div className= "w-4/5 h-3/4 bg-[#ffffff] mt-3 rounded-3xl shadow-lg">
+                    <div class="px-6 py-3 m-4">
 
                         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php" onSubmit={handleSubmit}>
-                            <h2 class="text-2xl font-effra text-[#525252]">Personal Details</h2>
+                            <h2 class="text-2xl font-effra text-[#525252] mx-[2rem]">Personal Details</h2>
                             <div class="my-[2rem]">
                                 <div class="flex flex-row justify-around">
                                     <input type="text" name="userName" placeholder='User Name' id="firstName" maxlength="20" required="required" pattern="^[A-Za-z]+$" class="w-5/12 text-center shadow-lg py-2 px-4 rounded-full">
@@ -88,13 +92,21 @@ export const RegisterStudent = () => {
                                         class="w-5/12 shadow-lg py-2 px-4 rounded-full text-center"></input>
 
                                 </div>
+                                <br />
+                                <div class="flex flex-row justify-around">
+                                    <input type="email" name="email" id="email" placeholder='Email' required="required" 
+                                        class="w-5/12 shadow-lg py-2 px-4 rounded-full text-center"></input>
+                                    <input type="text" name="mobile" id="mobile" placeholder='Mobile' required="required" 
+                                        class="w-5/12 shadow-lg py-2 px-4 rounded-full text-center"></input>
+
+                                </div>
                             </div><br />
 
 
 
 
 
-                            <h2 class="text-2xl font-effra text-[#525252] mb-[2rem]">Subjects</h2>
+                            <h2 class="text-2xl font-effra text-[#525252] m-[2rem]">Subjects</h2>
                             <div class="flex flex-row justify-around gap-[10px] mb-5">
                                 <label class={`w-80 text-center bg-[ffffff] hover:bg-[#176AE6] hover:text-[#ffffff] text-[#8B8B8B] shadow-lg py-2 px-4 rounded-full ${isChecked1 ? "bg-[#176AE6] text-white" : 'bg-[ffffff]'}`} for="art">Art</label>
                                 <input type="checkbox" id="art" name="subjects[]" value="art" style={{ display: "none" }} checked={isChecked1} onChange={handleCheckboxChange(1)}></input>
@@ -121,7 +133,10 @@ export const RegisterStudent = () => {
                             </div>
 
                             <div class="text-center">
-                                <input type="submit" id="submit" value="Create" class="bg-[ffffff] bg-[#176AE6] text-[#ffffff]  hover:bg-[#363e94] shadow-lg px-4 rounded-full w-1/4 h-9 text-center"></input>
+                                <div class="inline-block hover:scale-110 transition-transform duration-300 ease-in-out">
+                                    <input type="submit" id="submit" value="Create" class="bg-[ffffff] bg-[#176AE6] text-[#ffffff] font-bold hover:bg-[#363e94] shadow-lg px-4 rounded-full w-[10rem] h-[3rem] text-center "></input>
+                                </div>
+
                             </div>
                         </form>
                     </div>
