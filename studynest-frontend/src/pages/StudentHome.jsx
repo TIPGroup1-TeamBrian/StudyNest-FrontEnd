@@ -1,12 +1,15 @@
 import React from 'react';
-import NarbarComponent from './NarbarComponent';
+import SideNarbarComponent from '../components/SideNarbarComponent';
 
 const StudentHomeComponent = () => {
   return (
     <div class="bg-red-50">
         <div class="bg-red">
-            <NarbarComponent/>
+            <SideNarbarComponent/>
+            
+            <div >
 
+            </div>
         </div>
 
     

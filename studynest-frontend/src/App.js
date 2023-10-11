@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import RegisterStudent from "./pages/RegisterStudent";
 import Login from "./pages/LoginRouter";
 import LoginComponent from "./components/LoginComponent";
-import StudentHomeComponent from './components/StudentHomeComponent';
+import StudentHome from './pages/StudentHome';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login/RegisterStudent' element={<RegisterStudent/>}/>
-        <Route path="/StudentHome" element={<StudentHomeComponent/>}/>
+        <Route path="/StudentHome" element={<StudentHome/>}/>
       
       </Routes>
     
