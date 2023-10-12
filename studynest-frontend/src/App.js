@@ -2,6 +2,10 @@ import './style/App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import SubjectComponent from './pages/SubjectComponent';
+import RegisterStudent from "./pages/RegisterStudent";
+import Login from "./pages/LoginRouter";
+import LoginComponent from "./components/LoginComponent";
+import StudentHome from './pages/StudentHome';
 
 function App() {
   return (
@@ -11,6 +15,8 @@ function App() {
         <Route path='/Student/Subjects' element={<SubjectComponent/>}/>
 
         
+        <Route path='/login/RegisterStudent' element={<RegisterStudent/>}/>
+        <Route path="/StudentHome" element={<StudentHome/>}/>
       
       </Routes>
     
