@@ -1,10 +1,11 @@
 import React from 'react';
 import SubjectForm from '../components/SubjectForm';
+import SideNarbarComponent from '../components/SideNarbarComponent';
 
 const SubjectComponent = () => {
   return (
     <div>
-        {/* <Navbar/> */}
+        <SideNarbarComponent/>
         <SubjectForm/>
         
 
