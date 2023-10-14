@@ -1,26 +1,51 @@
 import React from 'react';
 import studentIcon from "../images/studentIcon.svg";
+import teacherIcon from "../images/teacherIcon.svg";
+import adminIcon from "../images/adminIcon.svg";
 import studyNestLogo from "../images/studynestLogo.svg";
 import { useLocation } from 'react-router-dom';
 import accountIcon from "../images/accountIcon.svg";
-import settingIcon from "../images/settingIcon.svg";
+import settingIcon from "../images/settingIcon.svg"
 import logOutIcon from "../images/logout.svg";
 
 const SideNarbarComponent = (props) => {
     const location = useLocation();
+    let currentRole;
+
+
+    switch(props.type){
+        case "Student":
+            currentRole = {name: "Peter Smith", navitems:["Home", "Subjects", "Subject Management"], icon:studentIcon};
+            break;
+
+        case "Teacher":
+            currentRole = {name: "Dr. David James", navitems:["Home", "Subjects", "Subject Management"], icon:teacherIcon};
+            break;
+
+        case "Admin":   
+            currentRole = {name: "Steven evans", navitems:["Home", "Subjects", "Subject Management"], icon:adminIcon};
+            break;
+
+
+        default:
+            currentRole = {name: "Peter Smith", navitems:["Home", "Subjects", "Subject Management"], icon:studentIcon};
+
+    }
+
+    
 
     return (
     <>
-    <div class='w-[23%] text-center font-Effra font-normal' >
-        <nav class="w-[22rem] h-full flex flex-col justify-between rounded-3xl shadow-2xl p-[2rem] fixed text-left mx-auto">
+    <div class='w-[23%] text-center font-Effra font-normal bg-white' >
+        <nav class="w-[22rem] h-full flex flex-col justify-between rounded-3xl shadow-2xl p-[2rem] fixed text-left mx-auto bg-white">
             <div id="nav-top">
                 <div class="mb-[4rem]">
 
                     <img class='w-[12rem] h-[8rem]' src={studyNestLogo} alt="study nest logo" />
                 </div>
                 <div class='flex gap-[0.5rem] items-center my-6'>
-                    <img class='w-[4rem] h-[4rem] mx-2' src={studentIcon} alt="student icon" />  
-                    <h1 class="text-xl font-Effra font-medium">Peter Smith</h1>
+                    <img class='w-[4rem] h-[4rem] mx-2' src={currentRole.icon} alt="student icon" />  
+                    <h1 class="text-xl font-Effra font-medium">{currentRole.name}</h1>
                 </div>
 
                 <div id="menu-section" class="flex flex-col gap-[1rem] my-[2rem]">
