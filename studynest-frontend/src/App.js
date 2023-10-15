@@ -1,18 +1,17 @@
 import './style/App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from "./pages/Home";
-import SubjectComponent from './pages/SubjectComponent';
-import RegisterStudent from "./pages/RegisterStudent";
-import Login from "./pages/LoginRouter";
-import LoginComponent from "./components/LoginComponent";
-import StudentHome from './pages/StudentHome';
+import Home from "./pages/Students/Home";
+import Enrollment from './pages/Students/Enrollment';
+import RegisterStudent from "./pages/Students/RegisterStudent";
+
+import StudentHome from './pages/Students/StudentHome';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/StudentSubManagement' element={<SubjectComponent/>}/>
+        <Route path='/StudentEnrollment' element={<Enrollment/>}/>
 
         
         <Route path='/login/RegisterStudent' element={<RegisterStudent/>}/>

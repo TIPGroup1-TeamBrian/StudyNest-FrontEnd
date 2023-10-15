@@ -3,7 +3,7 @@ import React from 'react';
 
 const SubjectForm = () => {
   return (
-    <div class="flex justify-end font-Effra font-normal">
+    <div class="flex justify-end font-Effra font-normal bg-[#f7f7f7]">
            
             <div class="w-[77%] felx flex-col items-center h-screen bg-[#f7f7f7]">
                 <div class="mt-[4rem] mx-[4rem]">
