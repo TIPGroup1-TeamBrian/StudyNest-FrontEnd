@@ -60,7 +60,7 @@ export const RegisterStudent = () => {
 
 
     return (
-        <div class="bg-[#f7f7f7]">
+        <div class="bg-[#f7f7f7] font-Effra">
             <nav class='px-12 py-4'>
                 <a href="/LoginStudent" class="text-[#587BB4]" >
                     <img src={Arrow} alt="Back Arrow" class="inline-block w-6 h-6 mr-2" />

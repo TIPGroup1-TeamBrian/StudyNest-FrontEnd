@@ -5,6 +5,7 @@ import Enrollment from './pages/Students/Enrollment';
 import RegisterStudent from "./pages/Students/RegisterStudent";
 
 import StudentHome from './pages/Students/StudentHome';
+import StudentSubject from './pages/Students/StudentSubject';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         
         <Route path='/login/RegisterStudent' element={<RegisterStudent/>}/>
         <Route path="/StudentHome" element={<StudentHome/>}/>
+        <Route path="/StudentSubjects" element={<StudentSubject/>}/>
       
       </Routes>
     

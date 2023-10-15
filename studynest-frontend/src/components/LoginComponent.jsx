@@ -57,8 +57,10 @@ const LoginComponent = (props) => {
             </div>
           </div> */}
 
-          <div class="flex flex-col justify-center items-center rounded-tl-[3em] rounded-br-[3em] bg-[#F2F7FF] px-[8%] pt-[5%] gap-[2rem] h-[80%] w-[80%] overflow-hidden shadow-xl">
-            <div class="flex flex-row items-center gap-8 mb-10">
+          <div class="rounded-tl-[3em] rounded-br-[3em] bg-[#F2F7FF] px-[8%] pt-[10%]  h-[80%] w-[80%]  overflow-hidden shadow-xl">
+            
+            <div class="flex flex-col justify-center items-center gap-[3rem]">
+              <div class="flex flex-row items-center gap-8 mb-10">
               <a href={`/Login${props.role1}`}>
                 <button class="bg-[#587bb4] hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
                   {props.role1} Login
@@ -98,9 +100,13 @@ const LoginComponent = (props) => {
                 <button href="" class="bg-[#587bb4] text-white w-[50%] h-auto py-[15px] px-[20px] cursor-pointer text-center rounded-[3em] block m-auto font-bold text-xl hover:scale-110 transition-transform duration-300 ease-in-out">Login</button>
               </div>
             </form>
+            
+            
+            </div>
+            
 
-              {props.currentRole === "Student"  && <div class="text-lg text-[#587BB4] ">First time here? Enroll now! Just click <a class="underline" href="/login/RegisterStudent">here</a></div>}
 
+              {props.currentRole === "Student"  && <div class="text-lg text-[#587BB4] text-center">First time here? Enroll now! Just click <a class="underline" href="/login/RegisterStudent">here</a></div>}
           </div>
 
 
