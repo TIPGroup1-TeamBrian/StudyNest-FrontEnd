@@ -5,7 +5,7 @@ import UnenrollTeacherComponent from './UnenrollTeacherComponent'
 export const UnenrollTeacher = () => {
     return (
         <div>
-            <SideNarbarComponent />
+            <SideNarbarComponent type="Admin"/>
             <UnenrollTeacherComponent />
         </div>
     )
