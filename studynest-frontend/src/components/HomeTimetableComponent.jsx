@@ -25,7 +25,7 @@ const HomeTimetableComponent = (props) => {
       time:"16:30-17:00",
       Monday: "",
       Tuesday: "",
-      Wednesday: "Computer Science",
+      Wednesday: "Computer Science", 
       Thursday: "",
       Friday: ""
     },
@@ -35,7 +35,7 @@ const HomeTimetableComponent = (props) => {
       Tuesday: "",
       Wednesday: "",
       Thursday: "",
-      Friday: "Physics"
+      Friday: "OOP Programming"
 
     },
     

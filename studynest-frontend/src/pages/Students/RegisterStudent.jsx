@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Arrow from "../images/arrowBack.svg"
+import Arrow from "../../images/arrowBack.svg"
 
 export const RegisterStudent = () => {
     const [isChecked1, setIsChecked1] = useState(false);

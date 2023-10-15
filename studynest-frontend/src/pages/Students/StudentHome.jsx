@@ -1,6 +1,6 @@
 import React from 'react';
-import SideNarbarComponent from '../components/SideNarbarComponent';
-import HomeTimetableComponent from '../components/HomeTimetableComponent';
+import SideNarbarComponent from '../../components/SideNarbarComponent';
+import HomeTimetableComponent from '../../components/HomeTimetableComponent';
 
 const StudentHomeComponent = () => {
   return (
