@@ -50,8 +50,8 @@ const SideNarbarComponent = (props) => {
 
                 <div id="menu-section" class="flex flex-col gap-[1rem] my-[2rem]">
                     {currentRole.navitems.map((item) => (
-                        <a href={`/${props.type}${item}`}>
-                            <button class={` ${ location.pathname === `/${props.type}${item}` ?  "bg-[#587BB4] text-white ": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B]"}  
+                        <a href={`/${props.type}/${item}`}>
+                            <button class={` ${ location.pathname === `/${props.type}/${item}` ?  "bg-[#587BB4] text-white ": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B]"}  
                             
                              py-2 pl-11 rounded-full w-full text-left text-lg`}>{item}</button>
                         </a>
