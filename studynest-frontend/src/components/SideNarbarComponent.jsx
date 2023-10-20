@@ -50,8 +50,8 @@ const SideNarbarComponent = (props) => {
 
                 <div id="menu-section" class="flex flex-col gap-[1rem] my-[2rem]">
                     {currentRole.navitems.map((item) => (
-                        <a href={`/${props.type}${item}`}>
-                            <button class={` ${ location.pathname === `/${props.type}${item}` ?  "bg-[#587BB4] text-white ": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B]"}  
+                        <a href={`/${props.type}/${item}`}>
+                            <button class={` ${ location.pathname === `/${props.type}/${item}` ?  "bg-[#587BB4] text-white ": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B]"}  
                             
                              py-2 pl-11 rounded-full w-full text-left text-lg`}>{item}</button>
                         </a>
@@ -59,21 +59,6 @@ const SideNarbarComponent = (props) => {
                
                     
 
-                    {/* // <a href="/StudentHome">
-                    //     <button class={` ${ location.pathname === "/StudentHome" ?  "bg-[#587BB4] text-white ": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B]"}  
-                        
-                    //      py-2 pl-11 rounded-full w-full text-left text-lg`}>Home</button>
-                    // </a>
-                    // <a href="/StudentSubjects">
-                    //     <button class={` ${ location.pathname === "/StudentSubjects" ?  "bg-[#587BB4] text-white ": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B] "}  
-                            
-                    //         py-2 pl-11 rounded-full w-full text-left text-lg`}>Subjects</button>
-                    // </a>
-                    // <a href="/StudentSubManagement">
-                    //     <button class={` ${ location.pathname === "/StudentSubManagement" ?  "bg-[#587BB4] text-white": "bg-white hover:scale-110 transition-transform duration-300 ease-in-out text-[#8B8B8B]"}  
-                            
-                    //         py-2 pl-11 rounded-full w-full text-left text-lg`}>Subject Management</button>
-                    // </a> */}
                     
                 </div>
 
