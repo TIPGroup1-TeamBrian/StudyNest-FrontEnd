@@ -1,6 +1,6 @@
 import './style/App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from "./pages/Students/Home";
+import Home from "./pages/Home";
 import Enrollment from './pages/Students/Enrollment';
 import RegisterStudent from "./pages/Students/RegisterStudent";
 import { UnenrollTeacher } from './pages/Admin/UnenrollTeacher';

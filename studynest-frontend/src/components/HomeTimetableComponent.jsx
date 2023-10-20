@@ -69,7 +69,7 @@ const HomeTimetableComponent = (props) => {
               </thead>
               <tbody>
                 {TABLE_ROWS.map(({ time, Monday, Tuesday, Wednesday, Thursday, Friday }, index) => (
-                  <tr key={time} class=" text-lg text-[#525252] text-center font-Effra font-semibold">
+                  <tr key={time} class=" text-lg text-[#525252] text-center font-Effra font-normal">
                     <td className="py-6">
                       <Typography
                         variant="h6"

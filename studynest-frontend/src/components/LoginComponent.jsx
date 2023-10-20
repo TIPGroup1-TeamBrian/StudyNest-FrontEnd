@@ -43,19 +43,7 @@ const LoginComponent = (props) => {
           id="right"
           className="flex flex-col justify-center items-center w-[50%] h-[100%]"
         >
-          {/* <div class="flex flex-col  w-3/4 h-3/6 rounded-tl-[60px] rounded-br-[60px] bg-[#F2F7FF] justify-center items-center">
-            <div class="flex my-4 py-2 px-1">
-              <h2 class="text-2xl text-[#587BB4]">Student Login</h2>
-            </div>
-
-            <div class="flex  rounded-full  my-3">
-              <input />
-            </div>
-
-            <div class="flex rounded-full my-3">
-              <input />
-            </div>
-          </div> */}
+          
 
           <div class="rounded-tl-[3em] rounded-br-[3em] bg-[#F2F7FF] px-[8%] pt-[10%]  h-[80%] w-[80%]  overflow-hidden shadow-xl">
             
