@@ -70,7 +70,7 @@ const SideNarbarComponent = (props) => {
 
             <div id="menu-section" class="flex flex-col gap-[1rem]">
                 <div>
-                    <a href={`/${props.type}Account`}>
+                    <a href={`/${props.type}/Account`}>
                         <img class='w-[1.4rem] h-[1.4rem] inline-block mr-[1rem]' src={accountIcon} alt="account icon" />
                         <button class="text-[#8B8B8B] font-semibold text-lg hover:scale-110 transition-transform duration-300 ease-in-out">Account</button>
                     </a>
@@ -78,7 +78,7 @@ const SideNarbarComponent = (props) => {
 
 
                 <div>
-                    <a href={`/${props.type}Settings`}>
+                    <a href={`/${props.type}/Settings`}>
                         <img class='w-[1.4rem] h-[1.4rem] inline-block mr-[1rem]' src={settingIcon} alt="setting icon" />
                         <button class="text-[#8B8B8B] font-semibold text-lg hover:scale-110 transition-transform duration-300 ease-in-out">Settings</button>
                     </a>

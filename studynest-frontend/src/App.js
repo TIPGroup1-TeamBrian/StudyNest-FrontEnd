@@ -6,6 +6,9 @@ import RegisterStudent from "./pages/Students/RegisterStudent";
 import { UnenrollTeacher } from './pages/Admin/UnenrollTeacher';
 import StudentHome from './pages/Students/StudentHome';
 import StudentSubject from './pages/Students/StudentSubject';
+import StudentAccount from './pages/Students/StudentAccount';
+import StudentSettings from './pages/Students/StudentSettings';
+
 
 function App() {
   return (
@@ -17,8 +20,9 @@ function App() {
         
         <Route path='/login/RegisterStudent' element={<RegisterStudent/>}/>
         <Route path="/Student/Home" element={<StudentHome/>}/>
-        <Route path="/Student/Subjects" element={<StudentSubject/>}/>
-      
+        <Route path="/Student/Subjects" element={<StudentSubject/>} />
+        <Route path='/Student/Account' element={<StudentAccount/>}/>
+        <Route path="/Student/Settings" element={<StudentSettings/>} />
       </Routes>
 
     </>
