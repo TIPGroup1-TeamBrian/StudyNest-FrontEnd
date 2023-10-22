@@ -41,7 +41,7 @@ const UnenrollTeacherComponent = () => {
   };
 
   return (
-    <div className="flex justify-end font-Effra font-normal">
+    <div className="flex justify-end font-Effra font-normal bg-[#f7f7f7]">
       <div className="w-[77%] flex flex-col items-center h-screen bg-[#f7f7f7]">
         <div className="mt-[3rem] m-[2rem] w-[90%]">
           <h1 className="text-4xl my-3 text-[#525252]">UnEnroll Tutors</h1>
@@ -52,7 +52,7 @@ const UnenrollTeacherComponent = () => {
               tutor.enrolled && (
                 <div
                   key={index}
-                  className="grid grid-cols-3 gap-3 border-2 border-solid border-[#F7F7F7] rounded-full py-2 px-2 my-2"
+                  className="grid grid-cols-3 gap-3 border-2 border-solid border-[#F7F7F7] rounded-full py-3 px-2 my-4"
                 >
                   <div className="w-26 flex h-8 items-center justify-center rounded-md text-[#8B8B8B]">
                     {tutor.name}

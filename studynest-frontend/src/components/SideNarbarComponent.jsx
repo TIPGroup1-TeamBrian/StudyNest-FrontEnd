@@ -77,12 +77,13 @@ const SideNarbarComponent = (props) => {
                 </div>
 
 
+                { props.type !== "Admin" &&
                 <div>
                     <a href={`/${props.type}/Settings`}>
                         <img class='w-[1.4rem] h-[1.4rem] inline-block mr-[1rem]' src={settingIcon} alt="setting icon" />
                         <button class="text-[#8B8B8B] font-semibold text-lg hover:scale-110 transition-transform duration-300 ease-in-out">Settings</button>
                     </a>
-                </div>
+                </div>}
 
 
                 <div>
