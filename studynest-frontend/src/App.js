@@ -14,6 +14,7 @@ import TeacherHome from './pages/Teacher/TeacherHome';
 import TeacherSessions from './pages/Teacher/TeacherSessions';
 import TeacherAccount from './pages/Teacher/TeacherAccount';
 import TeacherSettings from './pages/Teacher/TeacherSettings';
+import EnrollTeacher from './pages/Admin/EnrollTeacher';
 
 
 function App() {
@@ -34,12 +35,14 @@ function App() {
         <Route path='/Admin/UnEnroll' element={<UnenrollTeacher />} />
         <Route path="/Admin/Settings" element={<AdminSettings/>} />
         <Route path="/Admin/Account" element={<AdminAccount/>} />
+        <Route path='/Admin/Enroll' element={<EnrollTeacher />} />
 
 
         <Route path="/Teacher/Home" element={<TeacherHome/>}/>
         <Route path="/Teacher/Sessions" element={<TeacherSessions/>}/>
         <Route path="/Teacher/Account" element={<TeacherAccount/>} />
         <Route path="/Teacher/Settings" element={<TeacherSettings/>} />
+
       </Routes>
 
     </>
